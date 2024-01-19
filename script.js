@@ -20,8 +20,6 @@
         circulo.style.transition = "1s"        
     })
 
-
-    // funções para controlar slide
     let intervalo = 2500
     let slide = 1;
 
@@ -60,3 +58,26 @@
         setTimeout(transicao, intervalo)
         circulo.style.background = "#d752b1"
     }
+    
+    function toggleMode() {
+        var body = document.body;
+        var lua = document.querySelector(".lua")
+
+        body.classList.toggle("dark-mode");
+
+        var isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
+
+        if(isDarkMode) {
+            lua.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        else
+            lua.innerHTML = '<i class="fas fa-moon"></i>'
+    }
+
+    // window.onload = function () {
+    //     var isDarkMode = localStorage.getItem("darkMode") === "true";
+    //     if (isDarkMode) {
+    //         document.body.classList.add("dark-mode");
+    //     }
+    // };
