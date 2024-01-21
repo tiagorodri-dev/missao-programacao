@@ -3,6 +3,7 @@
     let verde = document.querySelector(".verde")
     let rosaClaro = document.querySelector(".amarelo")
     let rosa = document.querySelector(".rosa")
+    let mode = document.querySelector(".mode")
 
     verde.addEventListener("click", () => {
         imgCopo.src = "./imagens/img1.png"
@@ -22,12 +23,10 @@
     let intervalo = 2500
     let slide = 1;
 
-    function transicao() {
-        // document.querySelector(".starbucks").style.opacity = "0";
+    function transicao() {        
         imgCopo.style.opacity = "0";
 
-        setTimeout(function(){
-            // document.querySelector(".starbucks").style.opacity = "1";
+        setTimeout(function() {            
             imgCopo.style.opacity = "1";
             switch(slide) {
                 case 1:
@@ -61,8 +60,7 @@
     }    
     
     function toggleMode() {
-        var body = document.body;
-        let lua = document.querySelector(".lua")        
+        var body = document.body;        
 
         body.classList.toggle("dark-mode");
 
@@ -70,19 +68,18 @@
         localStorage.setItem("darkMode", isDarkMode);
 
         if(isDarkMode) {
-            lua.innerHTML = '<i class="fas fa-sun"></i>';
+            mode.innerHTML = '<i class="fas fa-sun"></i>';
         }
         else
-            lua.innerHTML = '<i class="fas fa-moon"></i>';
+            mode.innerHTML = '<i class="fas fa-moon"></i>';
     }
 
-    window.addEventListener('load', e => {
-        let lua = document.querySelector(".lua")
+    window.addEventListener('load', e => {        
         var isDarkMode = localStorage.getItem("darkMode") === "true";        
 
         if (isDarkMode) {
             document.body.classList.add("dark-mode");
-            lua.innerHTML = '<i class="fas fa-sun"></i>';
+            mode.innerHTML = '<i class="fas fa-sun"></i>';
         }
     });
         
