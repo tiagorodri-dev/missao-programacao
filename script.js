@@ -62,8 +62,7 @@
     
     function toggleMode() {
         var body = document.body;
-        let lua = document.querySelector(".lua")
-        var theme = 0
+        let lua = document.querySelector(".lua")        
 
         body.classList.toggle("dark-mode");
 
