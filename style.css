@@ -35,6 +35,7 @@ header {
     border: none;
     background: none;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .fa-moon {
