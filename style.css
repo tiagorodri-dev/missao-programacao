@@ -5,8 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    padding: 20px 0 0 100px;
+body {
+    padding: 20px 0 0 20px;
     background-color: #fafafa;
     transition: background 0.5s linear;
 }
@@ -15,7 +15,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    height: 100px;
+    box-sizing: border-box;
 }
 
 .dark-mode {
@@ -126,65 +127,48 @@ p {
     margin-top: 50px;
 }
 
+@media (min-width: 1000px) {
+    header {
+        margin-bottom: 50px;
+    }
+}
 
-.dark {
-    --text-white: #e6e6e6;
-    --text-dark: #ffffff;
-    --bg-grey-light: #142136;
-    --bg-white: #22395d;
-    --bg-blue-dark: #142136;
-    --bg-indigo: #7577e1;
-  }
-
-
-/* @media (max-width: 1223px) {
+@media (max-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;        
+    }
+    
     .conteudo{
-        
+        display: block;
     }
 
     .caixa-texto{
-
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
     }
 
-    .menu {
-
-    }    
-
     .caixa-imagem{
-
+            
     }
 
     .starbucks{
-
-    }
-
-    .circulo{
-
-    }    
-}
-
-@media (max-width: 640px) {
-    .conteudo {
-
-    }
-
-    .caixa-texto {
-
-    }
-
-    .menu {
-
-    }    
-
-    .caixa-imagem {
-        
-    }
-
-    .starbucks {
-
+        width: 50%;
+        height: 50%;               
     }
 
     .circulo {
-
+        width: 50%;
+        height: 50%;            
     }    
-} */
+}
+
+@media (max-width: 768px) {
+    .caixa-imagem{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
