@@ -3,12 +3,21 @@
 </h1>
 
 ## 🏠 Aplicação:
-https://starbucks-vert-one.vercel.app/
+  https://site-starbucks.vercel.app
 <br><br>
 
 ## 🎯 Objetivo:
-Causar ao usuário final uma experiência agradável através de uma interface inicial amigável e intuitiva
+  Treinar os conceitos de localStorage e Manipulação do DOM com Javascript.
 <br><br>
+
+## ⚡ Funcionalidades:
+<ul>
+  <li>Slide de imagens.</li>
+  <li>Modo light e dark.</li>
+  <li>Mudança do sorvete após seleção.</li>  
+  <li>Responsividade para dispositivos móveis e tablets.</li>
+</ul>
+<br>
 
 ## 💡 Tecnologias:
 As tecnologias utilizadas foram: HTML, CSS, Git e Vercel.
@@ -20,17 +29,9 @@ As tecnologias utilizadas foram: HTML, CSS, Git e Vercel.
 </div>
 <br>
 
-## ⚡ Funcionalidades:
-<p>A aplicação tem como funcionalidade principal causar uma boa experiência ao usuário, tendo como funcionalidades:</p>
+## ✋ Pré-requisitos para uso:
 <ul>
-  <li>Modo light e dark;</li>
-  <li>Responsividade para dispositivos móveis e tablets.</li>
-</ul>
-<br>
-
-## ✋ Pré-requisitos:
-<ul>
-  <li>Ter acesso a internet;</li>
+  <li>Ter acesso a internet.</li>
   <li>Ter acesso a algum navegador de internet (Google Chrome, Mozilla, Edge ou qualquer outro).</li>
 </ul>
 <br>
